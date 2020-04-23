@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+
+.resume{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "name" "photo"
+    "work" "about"
+    "education" "work"
+    "education" "skills"
+
+}
+
+.name{
+    grid-area: name;
+}
+.photo{
+    grid-area: photo;
+}
+.about{
+    grid-area: about;
+}
+.work{
+    grid-area: work;
+}
+.education{
+    grid-area: education;
+}
+.skills{
+    grid-area: skills;
+}
+
