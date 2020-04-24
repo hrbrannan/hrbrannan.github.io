@@ -1,0 +1,7 @@
+@charset "utf-8";
+@font-face{font-family: Soulcraft; src: url('Soulcraft.ttf');}
+
+h1{
+    font-family: Soulcraft sans-serif;
+    color: #99748e;
+}
