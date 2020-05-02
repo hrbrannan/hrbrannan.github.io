@@ -1,0 +1,94 @@
+@charset "utf-8";
+@font-face{font-family: Soulcraft; src:url('Soulcraft.ttf');}
+/*Flex Styles*/
+.container {
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: stretch;
+    order: 0; 
+}
+h1, h2, h3{
+    font-family: Soulcraft, sans-serif;
+    color: #99748e
+}
+
+.highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fdbda6 50%);
+}
+body{
+    background-color: bisque;
+    
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-indent: 20px;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #749299;
+}
+a:hover{
+    color: #99748e;
+}
+
+
+
+
+
+
+/*Navigation Style*/
+li{
+    float: left;
+}
+li>a{
+    display: block ;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    
+}
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color:#fdbda6 ;
+}
+li>a:hover{
+    color: #749299;
+}
+/*Media Styles*/
+@media print{
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: none;
+        width: 100%;
+    }
+    h1{
+        font-size: 20pt;
+    }
+    h2{
+        font-size: 16pt;
+    }
+    nav{
+        display: none;
+    }
+
+    @page{
+        margin: 0.5cm;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    body{
+        display: flex;
+    }
+}

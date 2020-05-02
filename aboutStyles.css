@@ -1,0 +1,129 @@
+@charset "utf-8";
+@font-face{font-family: Soulcraft; src:url('Soulcraft.ttf');}
+/*heading styles*/
+h1, h2, h3{
+    font-family: Soulcraft, sans-serif;
+    color:#99748e;
+}
+.highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #F1a35e 50%);
+}
+/*flex styles*/
+.container {
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap;
+}
+.headerContainer{
+    width: 100%;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 0;
+}
+header, header.headerContainer{
+    display: flex;
+    flex-direction: row;
+	align-items: flex-start;
+	justify-content: baseline;
+    flex-wrap: wrap;
+}
+
+/*body styles*/
+body{
+    background-color: bisque;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e8364;
+}
+section#general{
+    width: 750px;
+    margin: 10px 20px 20px 10px;
+    text-align: left;
+}
+section#general>div{
+    padding: 10px 10px 10px 10px;
+}
+
+
+section#favorite{
+    width: 300px;
+    text-align: center;
+    background-image: url("pinkBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    contain: content;
+    z-index: 1;
+    
+}
+section>ul{
+    list-style-type: none;
+    
+}
+section#books{
+    width: 300px;
+    margin: 25px 20px 0px 0px;
+    text-align: center;
+    z-index: 1;
+}
+section#books>img#frame{
+    position: absolute;
+    left:870px;
+    top:235px;
+    z-index: -1;
+}
+section#vinyl{
+    width: 200px;
+    margin: 20px 20px 0px 0px;
+}
+
+
+/*Nav styles*/
+li{
+    float: left;
+}
+li>a{
+    display: block ;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    
+}
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color:#fdbda6 ;
+}
+li>a:hover{
+    color: #749299;
+}
+
+a:hover{
+    color: #749299;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 480px){
+    body{
+        display: flex;
+    }
+    .container{
+        display: flex;
+        flex-flow: column;
+    }
+    #books{
+        order: 1;
+    }
+    #vinyl{
+        order: 2;
+    }
+}
+
+
