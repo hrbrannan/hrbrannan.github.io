@@ -4,10 +4,12 @@
 .container {
     justify-content: space-evenly;
     display: flex;
+    -webkit-box-flex: inherit;
     flex-flow: row wrap;
 }
 header{
     display: flex;
+    -webkit-box-flex: inherit;
     flex-flow: row wrap;
     align-self: stretch;
     order: 0; 
