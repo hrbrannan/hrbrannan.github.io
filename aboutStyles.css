@@ -6,7 +6,7 @@ h1, h2, h3{
     color:#99748e;
 }
 .highlight{
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #F1a35e 50%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fdbda6 50%);
 }
 /*flex styles*/
 .container {
@@ -43,44 +43,38 @@ section#general{
     width: 750px;
     margin: 10px 20px 20px 10px;
     text-align: left;
+    
 }
 section#general>div{
     padding: 10px 10px 10px 10px;
 }
 
-
-section#favorite{
-    width: 300px;
-    text-align: center;
-    background-image: url("pinkBackground.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    contain: content;
-    z-index: 1;
-    
-}
 section>ul{
     list-style-type: none;
     
 }
 section#books{
     width: 300px;
+    height: 200px;
+    background-color: #fdbda6;
     margin: 25px 20px 0px 0px;
     text-align: center;
     z-index: 1;
 }
-section#books>img#frame{
-    position: absolute;
-    left:870px;
-    top:235px;
-    z-index: -1;
-}
-section#vinyl{
-    width: 200px;
-    margin: 20px 20px 0px 0px;
+#books>h3>span.highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, bisque 50%);
 }
 
+section#vinyl{
+    width: 300px;
+    height: 200px;
+    margin: 25px 20px 0px 0px;
+    text-align: center;
+    background-color: #fdbda6;
+}
+#vinyl>h3>span.highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, bisque 50%);
+}
 
 /*Nav styles*/
 li{
